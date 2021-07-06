@@ -1,1 +1,1 @@
-# React Course
+# React Course with Andrew Mead
