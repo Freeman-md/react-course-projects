@@ -16,7 +16,7 @@
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _person__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./person */ \"./src/person.js\");\n// import './utils.js'\r\n// import { square, add } from './utils'\r\n\r\n// console.log('app.js is running')\r\n// console.log(square(4))\r\n// console.log(add(100,23))\r\n\r\n\r\nconsole.log((0,_person__WEBPACK_IMPORTED_MODULE_0__.isAdult)(19))\r\nconsole.log((0,_person__WEBPACK_IMPORTED_MODULE_0__.canDrink)(22))\n\n//# sourceURL=webpack://indecision-app/./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _person__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./person */ \"./src/person.js\");\n// import './utils.js'\r\n// import subtract, { square, add } from './utils'\r\n\r\n// console.log('app.js is running')\r\n// console.log(square(4))\r\n// console.log(add(100,23))\r\n// console.log(subtract(100, 81))\r\n\r\n\r\nconsole.log((0,_person__WEBPACK_IMPORTED_MODULE_0__.isAdult)(19))\r\nconsole.log((0,_person__WEBPACK_IMPORTED_MODULE_0__.canDrink)(22))\r\nconsole.log((0,_person__WEBPACK_IMPORTED_MODULE_0__.default)(65))\n\n//# sourceURL=webpack://indecision-app/./src/app.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _per
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"isAdult\": () => (/* binding */ isAdult),\n/* harmony export */   \"canDrink\": () => (/* binding */ canDrink)\n/* harmony export */ });\nconst isAdult = age =>  age >= 18 ? true : false\r\n\r\nconst canDrink = age =>  age >= 21 ? true : false\r\n\r\n\n\n//# sourceURL=webpack://indecision-app/./src/person.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"isAdult\": () => (/* binding */ isAdult),\n/* harmony export */   \"canDrink\": () => (/* binding */ canDrink),\n/* harmony export */   \"default\": () => (/* binding */ isSenior)\n/* harmony export */ });\nconst isAdult = age =>  age >= 18 ? true : false\r\n\r\nconst canDrink = age =>  age >= 21 ? true : false\r\n\r\nconst isSenior = age => age >= 65 ? true : false\r\n\r\n\n\n//# sourceURL=webpack://indecision-app/./src/person.js?");
 
 /***/ })
 
