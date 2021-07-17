@@ -16,7 +16,67 @@
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\nvar _jsxFileName = \"C:\\\\Users\\\\Freeman\\\\Desktop\\\\Essentials\\\\Front End\\\\React Projects\\\\react-course-projects\\\\indecision-app\\\\src\\\\app.js\";\n// install -> import -> use\n\n\nconst template = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"p\", {\n  __self: undefined,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 5,\n    columnNumber: 18\n  }\n}, \"Testing 123\");\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render(template, document.getElementById('app'));\n\n//# sourceURL=webpack://indecision-app/./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var _components_IndecisionApp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/IndecisionApp */ \"./src/components/IndecisionApp.js\");\nvar _jsxFileName = \"C:\\\\Users\\\\Freeman\\\\Desktop\\\\Essentials\\\\Front End\\\\React Projects\\\\react-course-projects\\\\indecision-app\\\\src\\\\app.js\";\n\n\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_IndecisionApp__WEBPACK_IMPORTED_MODULE_2__.default, {\n  __self: undefined,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 5,\n    columnNumber: 17\n  }\n}), document.getElementById('app'));\n\n//# sourceURL=webpack://indecision-app/./src/app.js?");
+
+/***/ }),
+
+/***/ "./src/components/Action.js":
+/*!**********************************!*\
+  !*** ./src/components/Action.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar _jsxFileName = \"C:\\\\Users\\\\Freeman\\\\Desktop\\\\Essentials\\\\Front End\\\\React Projects\\\\react-course-projects\\\\indecision-app\\\\src\\\\components\\\\Action.js\";\n\n\nconst Action = props => {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    __self: undefined,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5,\n      columnNumber: 5\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    onClick: props.handlePick,\n    disabled: !props.hasOptions,\n    __self: undefined,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6,\n      columnNumber: 7\n    }\n  }, \"What should I do?\"));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Action);\n\n//# sourceURL=webpack://indecision-app/./src/components/Action.js?");
+
+/***/ }),
+
+/***/ "./src/components/AddOption.js":
+/*!*************************************!*\
+  !*** ./src/components/AddOption.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ AddOption)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar _jsxFileName = \"C:\\\\Users\\\\Freeman\\\\Desktop\\\\Essentials\\\\Front End\\\\React Projects\\\\react-course-projects\\\\indecision-app\\\\src\\\\components\\\\AddOption.js\";\n\nclass AddOption extends react__WEBPACK_IMPORTED_MODULE_0__.Component {\n  constructor(props) {\n    super(props);\n    this.handleAddOption = this.handleAddOption.bind(this);\n    this.state = {\n      error: undefined\n    };\n  }\n\n  handleAddOption(e) {\n    e.preventDefault();\n    const option = e.target.elements.option.value.trim();\n    const error = this.props.handleAddOption(option);\n    this.setState(() => ({\n      error\n    }));\n\n    if (!error) {\n      e.target.elements.option.value = '';\n    }\n  }\n\n  render() {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 24,\n        columnNumber: 7\n      }\n    }, this.state.error && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"p\", {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 25,\n        columnNumber: 28\n      }\n    }, this.state.error), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"form\", {\n      onSubmit: this.handleAddOption,\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 26,\n        columnNumber: 7\n      }\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"input\", {\n      type: \"text\",\n      name: \"option\",\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 27,\n        columnNumber: 9\n      }\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n      type: \"submit\",\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 28,\n        columnNumber: 9\n      }\n    }, \"Submit\")));\n  }\n\n}\n\n//# sourceURL=webpack://indecision-app/./src/components/AddOption.js?");
+
+/***/ }),
+
+/***/ "./src/components/Header.js":
+/*!**********************************!*\
+  !*** ./src/components/Header.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar _jsxFileName = \"C:\\\\Users\\\\Freeman\\\\Desktop\\\\Essentials\\\\Front End\\\\React Projects\\\\react-course-projects\\\\indecision-app\\\\src\\\\components\\\\Header.js\";\n\n\nconst Header = props => {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    __self: undefined,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5,\n      columnNumber: 5\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h1\", {\n    __self: undefined,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6,\n      columnNumber: 7\n    }\n  }, props.title), props.subtitle && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h2\", {\n    __self: undefined,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7,\n      columnNumber: 26\n    }\n  }, props.subtitle));\n};\n\nHeader.defaultProps = {\n  title: 'Indecision'\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);\n\n//# sourceURL=webpack://indecision-app/./src/components/Header.js?");
+
+/***/ }),
+
+/***/ "./src/components/IndecisionApp.js":
+/*!*****************************************!*\
+  !*** ./src/components/IndecisionApp.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ IndecisionApp)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _AddOption__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AddOption */ \"./src/components/AddOption.js\");\n/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ \"./src/components/Header.js\");\n/* harmony import */ var _Action__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Action */ \"./src/components/Action.js\");\n/* harmony import */ var _Options__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Options */ \"./src/components/Options.js\");\nvar _jsxFileName = \"C:\\\\Users\\\\Freeman\\\\Desktop\\\\Essentials\\\\Front End\\\\React Projects\\\\react-course-projects\\\\indecision-app\\\\src\\\\components\\\\IndecisionApp.js\";\n\n\n\n\n\nclass IndecisionApp extends react__WEBPACK_IMPORTED_MODULE_0__.Component {\n  constructor(props) {\n    super(props);\n    this.handleDeleteOptions = this.handleDeleteOptions.bind(this);\n    this.handlePick = this.handlePick.bind(this);\n    this.handleAddOption = this.handleAddOption.bind(this);\n    this.handleDeleteOption = this.handleDeleteOption.bind(this);\n    this.state = {\n      options: []\n    };\n  }\n\n  componentDidMount() {\n    try {\n      const json = localStorage.getItem('options');\n      const options = JSON.parse(json);\n\n      if (options) {\n        this.setState(() => ({\n          options\n        }));\n      }\n    } catch (e) {}\n  }\n\n  componentDidUpdate(prevProps, prevState) {\n    if (prevState.options.length !== this.state.options.length) {\n      const json = JSON.stringify(this.state.options);\n      localStorage.setItem('options', json);\n    }\n  }\n\n  componentWillUnmount() {\n    console.log('componentWillUnmount');\n  }\n\n  handleDeleteOptions() {\n    this.setState(() => ({\n      options: []\n    }));\n  }\n\n  handleDeleteOption(optionToRemove) {\n    this.setState(prevState => ({\n      options: prevState.options.filter(option => optionToRemove !== option)\n    }));\n  }\n\n  handlePick() {\n    const randomNum = Math.floor(Math.random() * this.state.options.length);\n    const option = this.state.options[randomNum];\n    alert(option);\n  }\n\n  handleAddOption(option) {\n    if (!option) {\n      return 'Enter valid value to add item';\n    } else if (this.state.options.indexOf(option) > -1) {\n      return 'This option already exists';\n    }\n\n    this.setState(prevState => ({\n      options: prevState.options.concat(option)\n    }));\n  }\n\n  render() {\n    const subtitle = 'Put your life in the hands of a computer';\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 69,\n        columnNumber: 7\n      }\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Header__WEBPACK_IMPORTED_MODULE_2__.default, {\n      subtitle: subtitle,\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 70,\n        columnNumber: 9\n      }\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Action__WEBPACK_IMPORTED_MODULE_3__.default, {\n      hasOptions: this.state.options.length > 0,\n      handlePick: this.handlePick,\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 71,\n        columnNumber: 9\n      }\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Options__WEBPACK_IMPORTED_MODULE_4__.default, {\n      options: this.state.options,\n      handleDeleteOptions: this.handleDeleteOptions,\n      handleDeleteOption: this.handleDeleteOption,\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 75,\n        columnNumber: 9\n      }\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_AddOption__WEBPACK_IMPORTED_MODULE_1__.default, {\n      handleAddOption: this.handleAddOption,\n      __self: this,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 80,\n        columnNumber: 9\n      }\n    }));\n  }\n\n}\n\n//# sourceURL=webpack://indecision-app/./src/components/IndecisionApp.js?");
+
+/***/ }),
+
+/***/ "./src/components/Option.js":
+/*!**********************************!*\
+  !*** ./src/components/Option.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar _jsxFileName = \"C:\\\\Users\\\\Freeman\\\\Desktop\\\\Essentials\\\\Front End\\\\React Projects\\\\react-course-projects\\\\indecision-app\\\\src\\\\components\\\\Option.js\";\n\n\nconst Option = props => {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    __self: undefined,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5,\n      columnNumber: 5\n    }\n  }, props.optionText, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    onClick: e => {\n      props.handleDeleteOption(props.optionText);\n    },\n    __self: undefined,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7,\n      columnNumber: 7\n    }\n  }, \"remove\"));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Option);\n\n//# sourceURL=webpack://indecision-app/./src/components/Option.js?");
+
+/***/ }),
+
+/***/ "./src/components/Options.js":
+/*!***********************************!*\
+  !*** ./src/components/Options.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _Option__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Option */ \"./src/components/Option.js\");\nvar _jsxFileName = \"C:\\\\Users\\\\Freeman\\\\Desktop\\\\Essentials\\\\Front End\\\\React Projects\\\\react-course-projects\\\\indecision-app\\\\src\\\\components\\\\Options.js\";\n\n\n\nconst Options = props => {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    __self: undefined,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6,\n      columnNumber: 5\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    onClick: props.handleDeleteOptions,\n    __self: undefined,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7,\n      columnNumber: 7\n    }\n  }, \"Remove All\"), props.options.length === 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"p\", {\n    __self: undefined,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 8,\n      columnNumber: 38\n    }\n  }, \"Please add an option to get started\"), props.options.map(option => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Option__WEBPACK_IMPORTED_MODULE_1__.default, {\n    key: option,\n    optionText: option,\n    handleDeleteOption: props.handleDeleteOption,\n    __self: undefined,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 11,\n      columnNumber: 11\n    }\n  })));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Options);\n\n//# sourceURL=webpack://indecision-app/./src/components/Options.js?");
 
 /***/ }),
 
@@ -137,6 +197,23 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
