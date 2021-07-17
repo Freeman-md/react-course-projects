@@ -1,0 +1,119 @@
+[33mcommit bfa46127d3d4f3539113b9106655c1771b79204a[m[33m ([m[1;36mHEAD -> [m[1;32mWebpack[m[33m, [m[1;31morigin/Webpack[m[33m)[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Tue Jul 13 08:59:40 2021 +0100
+
+    Importing npm modules
+
+[33mcommit c2b871aa28eef09536767bb4724f76056a314d65[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Tue Jul 13 08:29:17 2021 +0100
+
+    Default exports
+
+[33mcommit b75d9fdd46dc9dc9469cb3898d5a8dffe9b7e95a[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Tue Jul 13 08:17:45 2021 +0100
+
+    ES6 import / export
+
+[33mcommit 8b31d932ab49c944ee185916de18800141035f5e[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Tue Jul 13 07:56:38 2021 +0100
+
+    Installing and Configuring Webpack
+
+[33mcommit 301591e76dc9eb3b8a1f64e7b61ec3370f5dcf5b[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Fri Jul 9 09:35:03 2021 +0100
+
+    Avoid global modules
+
+[33mcommit 7f46c5928faf1dfafd1febb6a9956d195ec6fa7a[m[33m ([m[1;31morigin/stateless-functional-components[m[33m, [m[1;32mstateless-functional-components[m[33m)[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Fri Jul 9 09:10:29 2021 +0100
+
+    Saving and Loading the count
+
+[33mcommit dae047778ccd1802ad45877c20fb0747500db0e8[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Fri Jul 9 08:58:42 2021 +0100
+
+    Saving and Loading Options Data
+
+[33mcommit 79d52ced351a78540355e6b13069fc6a7e7b48e8[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Fri Jul 9 08:44:31 2021 +0100
+
+    Lifecycle Methods
+
+[33mcommit a60f1b720ebca4b66bf2ce1bcd622721d310a4ce[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Fri Jul 9 08:29:42 2021 +0100
+
+    Removing Individual Options
+
+[33mcommit f7b782fe91e1226f76ddd3a1da41aaecff2afc48[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Fri Jul 9 08:11:04 2021 +0100
+
+    React Dev Tools
+
+[33mcommit c59446f08ca48ae251620861fc7e555664ade776[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Fri Jul 9 08:00:52 2021 +0100
+
+    Default Props
+
+[33mcommit 33b47dd5a5280025bae732f0eee9fb2a422d499a[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Fri Jul 9 07:51:13 2021 +0100
+
+    The Stateless Functional Component
+
+[33mcommit e69ec1f74d78f29fa3ddff921a623303eacd90a8[m[33m ([m[1;31morigin/react-components[m[33m, [m[1;32mreact-components[m[33m)[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Tue Jul 6 15:50:36 2021 +0100
+
+    Indecision State - Part II
+
+[33mcommit 397533a8ff3c71bf175baa82afbbc5c3d82be621[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Tue Jul 6 15:30:20 2021 +0100
+
+    Indecision State - Part 1
+
+[33mcommit 3ca41e5c80450ceec16efff3fdcab0bf9c0b5174[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Tue Jul 6 15:08:27 2021 +0100
+
+    Adding State to Visibility Toggle
+
+[33mcommit 6270b1f62d8697fe02747f380791b31448ec1197[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Tue Jul 6 14:52:17 2021 +0100
+
+    Alternative setState Syntax
+
+[33mcommit e6ed20064a11def7c70ca4ccab7c417d85e51913[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Tue Jul 6 14:41:53 2021 +0100
+
+    Adding State to Counter App - Part II
+
+[33mcommit b319e751fc17fe6176e6dcdf9ca50850c9488406[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Tue Jul 6 14:31:07 2021 +0100
+
+    Adding State to Counter App - Part I
+
+[33mcommit 2ed693f0aabeac906fffa6383d32c701122ef871[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Tue Jul 6 14:18:21 2021 +0100
+
+    Component Props, Events & Methods, Method Binding, React Component State
+
+[33mcommit 87114c03d807bf771afcc43e8b96d3b326946e50[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Freeman-md <freemanmadudili@gmail.com>
+Date:   Tue Jul 6 14:05:58 2021 +0100
+
+    Initial commit
