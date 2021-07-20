@@ -1,49 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import AppRouter from './routers/AppRouter'
+import configureStore from './store/configureStore'
+import { addExpense } from './actions/expenses'
+import { setTextFilter } from './actions/filters'
+import getVisibleExpenses from './selectors/expenses'
 import 'normalize.css/normalize.css'
 import './styles/styles.scss'
 
-const ExpenseDashboardPage = () => (
-  <div>
-    This is from my dashboard component
-  </div>
-)
+const store = configureStore()
 
-const AddExpensePage = () => (
-  <div>
-    This is from my add expense component
-  </div>
-)
+store.dispatch(addExpense({ description: 'Water Bill', amount: 400 }))
+store.dispatch(addExpense({ description: 'Gas Bill', amount: 200 }))
+store.dispatch(setTextFilter('water'))
 
-const EditExpensePage = () => (
-  <div>
-    This is from my edit expense component
-  </div>
-)
+const state = store.getState()
+const visibleExpenses = getVisibleExpenses(state.expenses, state.filters)
+console.log(visibleExpenses)
 
-const HelpPage = () => (
-  <div>
-    This is from my help component
-  </div>
-)
-
-const NotFoundPage = () => (
-  <div>
-    404!
-  </div>
-)
-
-const routes = (
-  <BrowserRouter>
-    <Switch>
-      <Route path="/" component={ExpenseDashboardPage} exact={true} />
-      <Route path="/create" component={AddExpensePage} />
-      <Route path="/edit" component={EditExpensePage} />
-      <Route path="/help" component={HelpPage} />
-      <Route component={NotFoundPage} />
-    </Switch>
-  </BrowserRouter>
-)
-
-ReactDOM.render(routes, document.getElementById('app'))
+ReactDOM.render(<AppRouter />, document.getElementById('app'))
